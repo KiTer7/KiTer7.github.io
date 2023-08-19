@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Track Way Delivery</title>
+    <meta name="author" content="Team 2116">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" type="image/png" href="./images/logo.png">
+    <script type="text/javascript" src="JavaScript.js" defer></script>
+</head>
+
+
+<!-- Header -->
+<header class="header" id="navigation_header">
+
+    <!-- Site navigation  -->
+
+    <div id="container_nav_header">
+        <nav class="navbar container" style="position: relative;">
+
+            <!-- Site navigation  -->
+            <div class="navigation" id="menu">
+                <ul class="navigation_list">
+                    <li class="navigation_li">
+                        <img src="./images/logo.png"  id="logo" alt="logoIMG" />
+                    </li>
+                    <li class="navigation_li">
+                        <a href="./index.html" class="navigation_link_list">Home</a>
+                    </li>
+                    <li class="navigation_li">
+                        <a href="./archive.html" class="navigation_link_list">Why choose us</a>
+                    </li>
+                    <li class="navigation_li">
+                        <a href="./create.html" class="active_navigation_link">Delivery</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    </nav>
+</header>
+
+<body>
+    <!--  CREATE PAGE-FORM  -->
+    <div class = "post-page"> 
+        <div id = "post-page-title">
+            <p>OUR STORY <p>
+        </div>
+        <div class = "create-content-display">
+            <div class = "post-page-content">
+                <form id = "post-page-form">
+                    <div>
+                        <label for="content">Content:</label>
+                        <textarea id="content" name="content"></textarea>
+                        <span id="content-error" class="error"></span>
+                    </div>
+                    <div>
+                        <button type="submit" id="create-post-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>  
+    
+</body>
+
+<button onclick="toTop()" id="toTopButton">To Top</button>
+
+</html>

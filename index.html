@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Track Way Delivery</title>
+    <meta name="author" content="Team 2116">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/png" href="./images/logo.png">
+    <script src="JavaScript.js" defer></script>
+</head>
+
+<body>
+    <!-- Site navigation  -->
+    <header class="header" id="navigation_header">
+        <div id="container_nav_header">
+            <nav class="navbar container" style="position: relative;">
+                <div class="navigation" id="menu">
+                    <ul class="navigation_list">
+                        <li class="navigation_li">
+                            <img src="./images/logo.png" id="logo" alt="logoIMG">
+                        </li>
+                        <li class="navigation_li">
+                            <a href="#home-header" class="active_navigation_link">Home</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./archive.html" class="navigation_link_list">Why choose us</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./create.html" class="navigation_link_list">Delivery</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="#about" class="navigation_link_list">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header -->
+    <div id="home-header">
+        <!--Header text-->
+        <div class="text-content">
+            <h1 class="text-heading">Track Way Dilivery</h1>
+            <div class="text-description">Your goods, your choice.</div>
+            <!-- Header slide show -->
+            <div class="slideshow">
+                <div class="slides">
+                    <img src="./images/slide-1.jpg">
+                </div>
+                <div class="slides">
+                    <img src="./images/slide-2.jpg">
+                </div>
+                <div class="slides">
+                    <img src="./images/slide-3.jpg">
+                </div>
+
+                <div class="last" onclick="changeSlide(-1)">❮</div>
+                <div class="next" onclick="changeSlide(1)">❯</div>
+            </div>
+        </div>
+    </div>
+    <!--Content-->
+    <div id="content">
+        <div class="content-section" id="about">
+            <h2 class="post-title">About Us</h2>
+            <p class="post-content">
+                Pharetra sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices
+                neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl
+                rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero
+                enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus
+                euismod quis viverra
+                nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu
+                felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut
+                placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque
+                viverra mauris in aliquam sem fringilla ut morbi tincidunt
+                augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis
+                tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus
+                vestibulum sed arcu non odio euismod
+                lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam
+                etiam erat velit scelerisque in dictum non consectetur a erat nam at lectus urna duis convallis
+                convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque
+                sodales ut etiam sit.
+            </p>
+
+            <div class="heroes-list">
+                <div class="heroes-item">
+                    <p class="heroes-name">Thor</p>
+                    <img src="/images/thor.jpg" alt="">
+                </div>
+                <div class="heroes-item">
+                    <p class="heroes-name">Doctor Strange</p>
+                    <img src="/images/Doctor-Strange.png" alt="">
+                </div>
+                <div class="heroes-item">
+                    <p class="heroes-name">Kang</p>
+                    <img src="/images/kang.jpg" alt="">
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-col">
+            <img src="./images/footerImage.png" alt="">
+        </div>
+        <div class="footer-col">
+            <ul id="list-menu">
+                <li class="footer-title">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="footer-title">
+                    <a href="./archive.html">Archive</a>
+                </li>
+                <li class="footer-title">
+                    <a href="./create.html">Create Post</a>
+                </li>
+                <li class="footer-title">
+                    <a href="./about.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-col-right">
+            <p class="footer-text">University of Tasmania</p>
+        </div>
+    </footer>
+    <button onclick="toTop()" id="toTopButton">To Top</button>
+</body>
+
+</html>

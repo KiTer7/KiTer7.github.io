@@ -1,0 +1,460 @@
+/* Remove all initial paddding and margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* The font applies for whole website. */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f2b015cd;
+}
+
+/*The navigation bar  */
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000000;
+    z-index: 4;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+#logo {
+    position: relative;
+    margin: 5px 8px;
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+}
+
+#navigation_header {
+    position: relative;
+    width: 500px;
+    height: 46px;
+}
+
+/* */
+.navigation_list {
+    list-style-type: none;
+    display: flex;
+}
+
+.navigation_link_list {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 32px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.active_navigation_link {
+    color: #8665a5;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 32px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.navigation_list li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+.btn:hover {
+    background-color: #666;
+    color: white;
+}
+
+/* style of header in home page */
+#home-header {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#home-header .text-content {
+    position: absolute;
+    top: 12%;
+    left: 16%;
+    color: #fff;
+}
+
+#home-header .text-heading {
+    font-size: 300%;
+}
+
+#home-header .text-description {
+    font-style: italic;
+}
+
+/* Slide show */
+#home-header .slideshow {
+    position: relative;
+    margin-top: 40px;
+    left: -30px;
+}
+
+#home-header .slides {
+    display: none;
+}
+
+#home-header .slides>img {
+    width: 40%;
+    vertical-align: middle;
+}
+
+/* Last, next buttons */
+.last,
+.next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 1s ease;
+    border-radius: 5px;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.next {
+    left: 39%;
+}
+
+.last {
+    left: -30px;
+}
+
+.last:hover,
+.next:hover {
+    background-color: rgba(137, 129, 129, 0.8);
+}
+
+/* Main content */
+#content {
+    padding-bottom: 0px;
+    height: 100%;
+}
+
+#content .content-section {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px 20px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+}
+
+#content .content-section .post-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#content .content-section .post-date {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+#content .content-section .post-tag {
+    text-align: center;
+    opacity: 0.4;
+}
+
+#content .content-section .post-content {
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .heroes-list {
+    margin-top: 10px;
+    list-style-type: none;
+
+}
+
+#content .heroes-item {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 8px;
+}
+
+#content .heroes-name {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#content .heroes-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* to control the flow next to floated "heroes-item" class */
+#content .clear {
+    clear: both;
+}
+
+/* Footer */
+footer {
+    padding: 60px 16px;
+    width: 100%;
+    height: 220px;
+    background-color: #383737;
+    color: white;
+    text-align: center;
+}
+
+footer .footer-col {
+    float: left;
+    padding: 0 48px;
+}
+
+footer .footer-col-right {
+    padding: 2px 48px;
+    text-align: right;
+}
+
+footer img {
+    width: 128px;
+    height: auto;
+}
+
+footer #list-menu {
+    list-style-type: none;
+    text-align: left;
+}
+
+footer .footer-title {
+    padding: 2px 0;
+}
+
+.footer-title a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 0;
+}
+
+.footer-title a:hover {
+    color: rgb(237, 29, 36);
+    text-shadow: 2px 2px #555;
+}
+
+/* scroll to top button */
+#toTopButton {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #555;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#toTopButton:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+ /* POST PAGE FORM */
+.post-page {
+    background-color: #f2b015cd ;
+
+}
+#post-page-header  {
+    width: auto;
+    height: auto;
+
+
+}
+
+#post-page-title {
+    color: #fff;
+    border: 1px solid black;
+    margin-top: 0;
+    margin-bottom:0 ;
+    text-align: center;
+}
+#post-page-title p {
+    font-size: 4em;
+
+}
+
+.post-page-content {
+    background-color: rgba(0, 0, 0, 0.805);
+    font-size: 1.2rem;
+    width: 60%;
+    border: 1px solid #ccc;
+    height: 100%;
+    margin: 0;
+    padding: 1em;
+    color: #ccc;
+
+}
+
+.post-page-content textarea {
+    margin-top: 0;
+    width: 100%;
+    height: 650px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(238, 235, 235);
+}
+
+.post-page-content input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(238, 235, 235);
+}
+/*Styling the button*/
+button[type="submit"], button[type="reset"] {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+button[type="reset"] {
+    background-color: #d50404;
+}
+
+button[type="reset"]:hover {
+    background-color: #d16464;
+}
+button[type="submit"] {
+    background-color: #1107c9;
+}
+  
+  
+button[type="submit"]:hover {
+    background-color: #7974cd;
+}
+
+.error {
+    color: rgb(242, 46, 46);
+    font-size: 16px;
+    font-style: italic;
+}
+
+.create-content-display {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    height: 100%;
+    border:2px solid #000;
+    margin: 0px;
+    color: #ccc;
+  }
+.content-display img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* About Page*/
+
+.about-us {
+    color: white;
+    text-align: center;
+    margin: 6rem;
+}
+.about-us h1 {
+    font-size: 6em;
+}
+
+.about-display {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    height: 100%;
+    border:2px solid #000;
+    margin: 2px;
+    color: #ccc;
+    background-color: #c6c4f279;
+  }
+
+.member-intro {
+    margin: 5%;
+    display: inline-block;
+    width: 20%;
+}
+  
+.member-intro img {
+    width: 100%;
+    height: auto;
+    border-radius:25%;
+
+}
+.desc p {
+    margin: 2em;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.description {
+    width: 100%;
+    height:800px;
+}
+.item {
+    color:white;
+}
