@@ -10,7 +10,6 @@
     <script type="text/javascript" src="JavaScript.js" defer></script>
 </head>
 
-
 <!-- Header -->
 <header class="header" id="navigation_header">
 
@@ -46,6 +45,21 @@
         <div id = "post-page-title">
             <p>OUR STORY <p>
         </div>
+        <div class = "create-content-display">
+            <div class = "post-page-content">
+                <form id = "post-page-form">
+                    <div>
+                        <label for="content">Content:</label>
+                        <textarea id="content" name="content"></textarea>
+                        <span id="content-error" class="error"></span>
+                    </div>
+                    <div>
+                        <button type="submit" id="create-post-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
         <div class = "create-content-display">
             <div class = "post-page-content">
                 <form id = "post-page-form">
