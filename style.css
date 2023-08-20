@@ -122,8 +122,8 @@ nav {
 }
 
 /* Slides in archive page */
-#home-header .slides img {
-    width: 40%;
+#home-header .slides .slide2 {
+    width: 60%;
     vertical-align: middle;
 }
 
@@ -149,6 +149,10 @@ nav {
     left: 39%;
 }
 
+#next2 {
+    left: 59%;
+}
+
 .last {
     left: -30px;
 }
@@ -156,6 +160,11 @@ nav {
 .last:hover,
 .next:hover {
     background-color: rgba(137, 129, 129, 0.8);
+}
+
+ad {
+    text-align: right;
+    margin-left: 50px;
 }
 
 /* Main content */
