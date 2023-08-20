@@ -12,12 +12,7 @@ html {
 }
 
 body {
-    /*background-color: #f2b015cd;*/
-    background-image: url('images/background.avif');
-    background-repeat: no-repeat;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
+    background-color: #f2b015cd;
 }
 
 
