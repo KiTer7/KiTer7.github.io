@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" type="image/png" href="./images/logo.png">
     <script type="text/javascript" src="JavaScript.js" defer></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 </head>
 
 <!-- Header -->
@@ -77,19 +79,17 @@
                         <textarea id="content-display" name="content" placeholder="To:"></textarea>
                         <span id="content-error" class="error"></span>
                     </div>
-                    
                 </form>
             </div>
         </div>
-
-
+        
+        
     </div>  
 
     <br>
     <br>
-   
-    <button type="submit" id="create-post-btn">Submit</button>
-
+    
+    <button type="submit" id="create-post-btn" onclick="window.location.href='./map.html';">Submit</button>
     
 </body>
 

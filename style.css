@@ -506,3 +506,11 @@ button[type="submit"]:hover {
 .item {
     color:white;
 }
+
+#map {
+    position: absolute;
+    margin: 0; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+}

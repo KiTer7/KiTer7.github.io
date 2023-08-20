@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Track Way Delivery</title>
+    <meta name="author" content="Team 2116">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" type="image/png" href="./images/logo.png">
+    <script type="text/javascript" src="JavaScript.js" defer></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+</head>
+
+<!-- Header -->
+<header class="header" id="navigation_header">
+
+    <!-- Site navigation  -->
+
+    <div id="container_nav_header">
+        <nav class="navbar container" style="position: relative;">
+
+            <!-- Site navigation  -->
+            <div class="navigation" id="menu">
+                <ul class="navigation_list">
+                    <li class="navigation_li">
+                        <img src="./images/logo.png"  id="logo" alt="logoIMG" />
+                    </li>
+                    <li class="navigation_li">
+                        <a href="./index.html" class="navigation_link_list">Home</a>
+                    </li>
+                    <li class="navigation_li">
+                        <a href="./archive.html" class="navigation_link_list">Why choose us</a>
+                    </li>
+                    <li class="navigation_li">
+                        <a href="./create.html" class="active_navigation_link">Delivery</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    </nav>
+</header>
+
+<body>
+    <div id="map">
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.css" type="text/css">
+
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiamRvZTM3IiwiYSI6ImNsbGhldXV6NjB6emgzbHFoaXE4Z2dkYjgifQ.hVsdMdE7J_5hNiG2qp57hA';
+            const map = new mapboxgl.Map({
+                container: 'map',
+                // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+                style: 'mapbox://styles/mapbox/streets-v12',
+                center: [134.47247,-25.95177],
+                zoom: 3.5
+            });
+
+
+            // Add a line layer to the map
+            map.on('load', function () {
+                map.addSource('lines', {
+                    type: 'geojson',
+                    data: 'lines.geojson' // Replace with the actual path
+                });
+
+                map.addLayer({
+                    id: 'lines',
+                    type: 'line',
+                    source: 'lines',
+                    paint: {
+                        'line-color': '#0285ff',
+                        'line-width': 4
+                    }
+                });
+            });
+        </script>
+    </div>
+
+    
+</body>
+</html>

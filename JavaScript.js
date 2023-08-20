@@ -156,3 +156,20 @@ form.addEventListener('reset', () => {
   contentError.textContent = '';
   contentInput.classList.remove('error');
 });
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiamRvZTM3IiwiYSI6ImNsbGhldXV6NjB6emgzbHFoaXE4Z2dkYjgifQ.hVsdMdE7J_5hNiG2qp57hA';
+var map = new mapboxgl.Map({
+    container: 'map', // Container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // Map style URL
+    center: [-74.5, 40], // Initial map center
+    zoom: 9 // Initial map zoom level
+});
+
+function myFunction() {
+    var x = document.getElementById("map");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
