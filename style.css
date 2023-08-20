@@ -126,6 +126,12 @@ nav {
     vertical-align: middle;
 }
 
+/* Slides in archive page */
+#home-header .slides img {
+    width: 40%;
+    vertical-align: middle;
+}
+
 /* Last, next buttons */
 .last,
 .next {
