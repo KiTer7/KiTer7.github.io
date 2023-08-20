@@ -12,8 +12,14 @@ html {
 }
 
 body {
-    background-color: #f2b015cd;
+    /*background-color: #f2b015cd;*/
+    background-image: url('images/background.avif');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
 }
+
 
 /*The navigation bar  */
 #menu {
@@ -307,10 +313,7 @@ footer .footer-title {
 }
 
  /* POST PAGE FORM */
-.post-page {
-    background-color: #f2b015cd ;
 
-}
 #post-page-header  {
     width: auto;
     height: auto;
@@ -342,6 +345,7 @@ footer .footer-title {
 
 }
 
+
 .post-page-content textarea {
     margin-top: 0;
     width: 100%;
@@ -366,11 +370,14 @@ footer .footer-title {
 /*Styling the button*/
 button[type="submit"], button[type="reset"] {
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    margin-left: 590px;
+
+
 
 }
 button[type="reset"] {
@@ -400,7 +407,7 @@ button[type="submit"]:hover {
     justify-content: center; 
     width: 100%;
     height: 100%;
-    border:2px solid #000;
+    /*border:2px solid #000; */
     margin: 0px;
     color: #ccc;
   }
