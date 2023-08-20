@@ -132,7 +132,7 @@ nav {
 
 /* Slides in archive page */
 #home-header .slides .slide2 {
-    width: 60%;
+    width: 65%;
     vertical-align: middle;
 }
 
@@ -342,12 +342,6 @@ footer .footer-title {
     /* Add a dark-grey background on hover */
 }
 
- /* POST PAGE FORM */
- /*
-.post-page {
-    background-color: #f2b015cd ;
-
-} */
 #post-page-header  {
     width: auto;
     height: auto;
