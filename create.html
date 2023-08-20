@@ -43,16 +43,20 @@
     <!--  CREATE PAGE-FORM  -->
     <div class = "post-page"> 
         <div id = "post-page-title">
-            <p>OUR STORY <p>
+            <p>Delivery<p>
         </div>
         <br>
         <div class = "create-content-display">
             <div class = "post-page-content">
                 <form id = "post-page-form">
                     <div>
-                        <label for="content">Content:</label>
-                        <textarea id="content" name="content" placeholder="Products Name"></textarea>
+                        <textarea id="content-display" name="content" placeholder="What kinds of product do you want to deliver?"></textarea>
                         <span id="content-error" class="error"></span>
+                        <br>
+                        <br>
+                        <div class="next-down" onclick="changeSlide(1)">❯
+                        <a href="#orgin" class="navigation_create_page">Origin to Destination</a></div>
+
                     </div>
             
                 </form>
@@ -62,30 +66,22 @@
         <br>
         <br>
 
-        <div class = "create-content-display">
+        <div class = "create-content-display" id="orgin" >
             <div class = "post-page-content">
                 <form id = "post-page-form">
                     <div>
-                        <label for="To">Orgin:</label>
-                        <textarea id="content" name="content" placeholder="From:"></textarea>
+                        <textarea id="content-display" name="content" placeholder="From:"></textarea>
                         <span id="content-error" class="error"></span>
                     </div>
+                    <div>
+                        <textarea id="content-display" name="content" placeholder="To:"></textarea>
+                        <span id="content-error" class="error"></span>
+                    </div>
+                    
                 </form>
             </div>
         </div>
-    
 
-        <div class = "create-content-display">
-            <div class = "post-page-content">
-                <form id = "post-page-form">
-                    <div>
-                        <label for="To">Destination:</label>
-                        <textarea id="content" name="content" placeholder="To:"></textarea>
-                        <span id="content-error" class="error"></span>
-                    </div>
-                </form>
-            </div>
-        </div>
 
     </div>  
 
