@@ -21,23 +21,20 @@ def get_closest_cities(n: int, coordinates_to_choose_from: list, initial_coordin
 coordinates_Hobart = [147.33838, -42.88239]
 coordinates_Launceston = [147.13255, -41.43418]
 coordinates_Melbourne = [144.93271, -37.84096]
-coordinates_Sydney = [151.20951, -33.96790]
-coordinates_Canberra = [149.19393, -35.30751]
+#coordinates_Sydney = [151.20951, -33.96790]
+#coordinates_Canberra = [149.19393, -35.30751]
 coordinates_Adelaide = [138.48900,-34.77145]
 coordinates_Perth = [115.76553,-32.23229]
-coordinates_AliceSprings = [133.87316,-23.69717]
-coordinates_Darwin = [130.88032,-12.41463]
-coordinates_PortHedland = [118.62247,-20.37309]
-coordinates_Cairns = [145.74899,-16.87862]
-coordinates_Brisbane = [153.11733,-27.39266]
+#coordinates_AliceSprings = [133.87316,-23.69717]
+#coordinates_Darwin = [130.88032,-12.41463]
+#coordinates_PortHedland = [118.62247,-20.37309]
+#coordinates_Cairns = [145.74899,-16.87862]
+#coordinates_Brisbane = [153.11733,-27.39266]
 
-coordinates_cities = [coordinates_Hobart, coordinates_Launceston, coordinates_Melbourne,
-                      coordinates_Sydney, coordinates_Canberra, coordinates_Adelaide, coordinates_AliceSprings,
-                      coordinates_Perth, coordinates_Darwin, coordinates_PortHedland, coordinates_Cairns,
-                      coordinates_Brisbane]
+coordinates_cities = [coordinates_Hobart, coordinates_Launceston, coordinates_Melbourne, coordinates_Adelaide, coordinates_Perth]
 coordinate_pairs = []
 for coordinates in coordinates_cities:
-    sd = get_closest_cities(3, coordinates_cities.copy(), coordinates)
+    sd = get_closest_cities(2, coordinates_cities.copy(), coordinates)
     for coords in sd:
         if [coordinates, coords] not in coordinate_pairs and [coords, coordinates] not in coordinate_pairs:
             coordinate_pairs.append([coordinates, coords])
